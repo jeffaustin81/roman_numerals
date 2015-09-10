@@ -1,0 +1,17 @@
+.showme {
+    display:none;
+}
+body {
+    width: 100%;
+    padding: 50px 0;
+    color: #000;
+    background: url(http://i22.photobucket.com/albums/b340/baybaybom/ani_rome_zps92424ed6.gif~original) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#num {
+    color: #000;
+}
