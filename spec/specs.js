@@ -1,8 +1,8 @@
 describe('romanConvert', function() {
-  // it("if user input is higher then 3999 send error", function(){
-  //   expect(romanConvert(4000)).to.equal("Roman numerals can not go higher then 3,999 :(");
-  // });
-  //
+  it("if user input is higher then 3999 send error", function(){
+    expect(romanConvert(4000)).to.equal("Roman numerals can not go higher then 3,999");
+  });
+
   it("Convert number to a roman numeral", function(){
     expect(romanConvert(3)).to.equal('III');
   });

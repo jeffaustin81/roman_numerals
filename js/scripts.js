@@ -1,5 +1,8 @@
 function romanConvert(num) {
-
+ //If num is larger then roman numerals can go
+ if(num > 3999 || num < 1){
+     return "Roman numerals can not go higher then 3,999 or lower then 1";
+ }
 
     var numeralList = [
         [1 , "I"],
@@ -42,3 +45,19 @@ function romanConvert(num) {
     var romanNumeral = romanArray.join('');
     return romanNumeral;
 }
+
+$(document).ready(function() {
+  $("form#romanConvert").submit(function(event) {
+    var num = parseInt($("input#num").val());
+
+    var romanNumeral = romanConvert(num);
+    $(".roman").empty();
+    $(".roman").text(romanNumeral);
+
+    $(".number").empty();
+    $(".number").text(num);
+
+    $(".showme").show();
+    event.preventDefault();
+  });
+});
